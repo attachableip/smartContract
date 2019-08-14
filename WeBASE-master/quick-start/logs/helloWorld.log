@@ -1,0 +1,725 @@
+2019-08-14 13:04:39.257 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1056 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:04:39.267 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:04:40.679 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:04:40.706 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:04:40.721 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:04:40.722 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:04:40.732 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:04:40.828 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:04:40.828 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1498 ms
+2019-08-14 13:04:41.128 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:04:41.286 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:04:41.308 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:04:41.312 [main] INFO  Application() - Started Application in 2.986 seconds (JVM running for 5.828)
+2019-08-14 13:04:41.394 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0xca597170829f4ad5054b618425a56e0be23cbc55","contractName":"HelloWorld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x4f08eac5af5e77b7006d11bee94adba2f721def8"}
+2019-08-14 13:04:41.685 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://127.0.0.1:8082/webase-front/trans/handle": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:734) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 4 more
+2019-08-14 13:04:41.706 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:14:39.523 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1166 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:14:39.533 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:14:40.720 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:14:40.744 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:14:40.756 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:14:40.756 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:14:40.765 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:14:40.852 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:14:40.852 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1251 ms
+2019-08-14 13:14:40.922 [main] WARN  AnnotationConfigServletWebServerApplicationContext() - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'contract.funcName' in value "${contract.funcName}"
+2019-08-14 13:14:40.925 [main] INFO  StandardService() - Stopping service [Tomcat]
+2019-08-14 13:14:40.941 [main] INFO  ConditionEvaluationReportLoggingListener() - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-14 13:14:40.947 [main] ERROR SpringApplication() - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'contract.funcName' in value "${contract.funcName}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at com.webank.webase.Application.main(Application.java:15) [classes/:?]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'contract.funcName' in value "${contract.funcName}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1185) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 17 more
+2019-08-14 13:17:51.949 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1193 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:17:51.957 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:17:52.903 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:17:52.923 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:17:52.935 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:17:52.936 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:17:52.942 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:17:53.009 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:17:53.009 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 947 ms
+2019-08-14 13:17:53.067 [main] WARN  AnnotationConfigServletWebServerApplicationContext() - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'contract.funcName' in value "${contract.funcName}"
+2019-08-14 13:17:53.069 [main] INFO  StandardService() - Stopping service [Tomcat]
+2019-08-14 13:17:53.081 [main] INFO  ConditionEvaluationReportLoggingListener() - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-14 13:17:53.085 [main] ERROR SpringApplication() - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'contract.funcName' in value "${contract.funcName}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at com.webank.webase.Application.main(Application.java:15) [classes/:?]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'contract.funcName' in value "${contract.funcName}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1185) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 17 more
+2019-08-14 13:22:00.893 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1230 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:22:00.900 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:22:01.796 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:22:01.814 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:22:01.826 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:22:01.826 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:22:01.832 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:22:01.896 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:22:01.896 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 963 ms
+2019-08-14 13:22:02.128 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:22:02.275 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:22:02.298 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:22:02.301 [main] INFO  Application() - Started Application in 1.695 seconds (JVM running for 3.792)
+2019-08-14 13:22:02.378 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0x1a77ef65697b36b3d902056b6936590ef134ec00","contractName":"helloworld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:22:02.479 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:5002/WeBASE-Front/trans/handle": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:734) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 4 more
+2019-08-14 13:22:02.484 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:22:41.529 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1237 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:22:41.551 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:22:42.719 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:22:42.740 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:22:42.754 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:22:42.755 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:22:42.766 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:22:42.855 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:22:42.855 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1220 ms
+2019-08-14 13:22:43.056 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:22:43.189 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:22:43.208 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:22:43.212 [main] INFO  Application() - Started Application in 2.295 seconds (JVM running for 3.583)
+2019-08-14 13:22:43.260 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0x1a77ef65697b36b3d902056b6936590ef134ec00","contractName":"helloworld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:22:43.419 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://http/193.112.64.100/WeBASE-Front/trans/handle": http; nested exception is java.net.UnknownHostException: http
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+Caused by: java.net.UnknownHostException: http
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:221) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:734) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 4 more
+2019-08-14 13:22:43.427 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:23:24.584 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1246 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:23:24.593 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:23:25.742 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:23:25.760 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:23:25.771 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:23:25.771 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:23:25.777 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:23:25.849 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:23:25.849 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1194 ms
+2019-08-14 13:23:26.066 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:23:26.190 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:23:26.207 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:23:26.210 [main] INFO  Application() - Started Application in 2.2 seconds (JVM running for 3.558)
+2019-08-14 13:23:26.258 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0x1a77ef65697b36b3d902056b6936590ef134ec00","contractName":"helloworld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:23:27.248 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:85) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 13:23:27.254 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:23:45.343 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1251 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:23:45.360 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:23:46.639 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:23:46.658 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:23:46.669 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:23:46.669 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:23:46.675 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:23:46.738 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:23:46.738 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1315 ms
+2019-08-14 13:23:46.932 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:23:47.058 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:23:47.075 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:23:47.078 [main] INFO  Application() - Started Application in 2.182 seconds (JVM running for 3.614)
+2019-08-14 13:23:47.124 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0x1a77ef65697b36b3d902056b6936590ef134ec00","contractName":"helloworld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:23:50.603 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 13:23:50.608 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:28:16.801 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1292 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:28:16.811 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:28:17.717 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:28:17.738 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:28:17.748 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:28:17.749 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:28:17.756 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:28:17.820 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:28:17.821 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 958 ms
+2019-08-14 13:28:18.024 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:28:18.181 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:28:18.200 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:28:18.203 [main] INFO  Application() - Started Application in 1.923 seconds (JVM running for 3.632)
+2019-08-14 13:28:18.338 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0x1a77ef65697b36b3d902056b6936590ef134ec00","contractName":"helloworld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:28:18.560 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 13:28:18.571 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:30:21.541 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1325 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:30:21.547 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:30:22.602 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:30:22.627 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:30:22.639 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:30:22.640 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:30:22.650 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:30:22.752 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:30:22.753 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1137 ms
+2019-08-14 13:30:22.990 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:30:23.136 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:30:23.156 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:30:23.159 [main] INFO  Application() - Started Application in 2.074 seconds (JVM running for 3.953)
+2019-08-14 13:30:23.237 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0x1a77ef65697b36b3d902056b6936590ef134ec00","contractName":"helloworld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:30:23.385 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 13:30:23.415 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:35:34.189 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1366 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:35:34.201 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:35:35.311 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:35:35.331 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:35:35.344 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:35:35.345 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:35:35.353 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:35:35.434 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:35:35.434 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1160 ms
+2019-08-14 13:35:35.503 [main] WARN  AnnotationConfigServletWebServerApplicationContext() - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'contract.funcParam' in value "${contract.funcParam}"
+2019-08-14 13:35:35.505 [main] INFO  StandardService() - Stopping service [Tomcat]
+2019-08-14 13:35:35.516 [main] INFO  ConditionEvaluationReportLoggingListener() - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-14 13:35:35.529 [main] ERROR SpringApplication() - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'contract.funcParam' in value "${contract.funcParam}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at com.webank.webase.Application.main(Application.java:15) [classes/:?]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'contract.funcParam' in value "${contract.funcParam}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211) ~[spring-core-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1185) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 17 more
+2019-08-14 13:35:56.445 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1371 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:35:56.451 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:35:57.609 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:35:57.631 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:35:57.644 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:35:57.645 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:35:57.653 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:35:57.760 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:35:57.760 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1211 ms
+2019-08-14 13:35:58.003 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:35:58.148 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:35:58.166 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:35:58.169 [main] INFO  Application() - Started Application in 2.306 seconds (JVM running for 3.621)
+2019-08-14 13:35:58.259 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0x1a77ef65697b36b3d902056b6936590ef134ec00","contractName":"helloworld","funcName":"get","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:35:58.433 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 13:35:58.439 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:36:31.519 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1377 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:36:31.552 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:36:32.959 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:36:32.980 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:36:32.992 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:36:32.993 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:36:33.001 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:36:33.088 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:36:33.089 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1463 ms
+2019-08-14 13:36:33.313 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:36:33.478 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:36:33.498 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:36:33.501 [main] INFO  Application() - Started Application in 2.619 seconds (JVM running for 4.513)
+2019-08-14 13:36:33.566 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0x1a77ef65697b36b3d902056b6936590ef134ec00","contractName":"helloworld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:36:33.700 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 13:36:33.727 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:38:12.884 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1395 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:38:12.893 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:38:13.734 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:38:13.753 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:38:13.765 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:38:13.766 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:38:13.772 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:38:13.837 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:38:13.837 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 905 ms
+2019-08-14 13:38:14.051 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:38:14.203 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:38:14.226 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:38:14.229 [main] INFO  Application() - Started Application in 1.858 seconds (JVM running for 3.681)
+2019-08-14 13:38:14.284 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0x11a77ef65697b36b3d902056b6936590ef134ec00","contractName":"helloworld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:38:14.460 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 13:38:14.466 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:41:38.348 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1425 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:41:38.357 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:41:39.326 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:41:39.350 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:41:39.364 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:41:39.364 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:41:39.372 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:41:39.461 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:41:39.462 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1016 ms
+2019-08-14 13:41:39.696 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:41:39.828 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:41:39.848 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:41:39.852 [main] INFO  Application() - Started Application in 2.023 seconds (JVM running for 3.764)
+2019-08-14 13:41:39.889 [main] ERROR TransactionService() - fail sendTransaction
+com.alibaba.fastjson.JSONException: syntax error, expect [, actual int, pos 0, fieldName null
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseArray(DefaultJSONParser.java:1135) ~[fastjson-1.2.54.jar:?]
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseArray(DefaultJSONParser.java:1122) ~[fastjson-1.2.54.jar:?]
+	at com.alibaba.fastjson.JSON.parseArray(JSON.java:511) ~[fastjson-1.2.54.jar:?]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:48) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 13:41:39.894 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:42:05.317 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1431 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:42:05.324 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:42:06.455 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:42:06.478 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:42:06.492 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:42:06.493 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:42:06.499 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:42:06.571 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:42:06.571 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1187 ms
+2019-08-14 13:42:06.803 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:42:06.932 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:42:06.950 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:42:06.954 [main] INFO  Application() - Started Application in 2.208 seconds (JVM running for 3.619)
+2019-08-14 13:42:07.022 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0x1a77ef65697b36b3d902056b6936590ef134ec00","contractName":"helloworld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:42:07.192 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 13:42:07.198 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:49:43.193 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1503 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:49:43.199 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:49:44.233 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:49:44.259 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:49:44.272 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:49:44.272 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:49:44.284 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:49:44.429 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:49:44.429 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1185 ms
+2019-08-14 13:49:44.689 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:49:44.845 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:49:44.865 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:49:44.868 [main] INFO  Application() - Started Application in 2.075 seconds (JVM running for 4.444)
+2019-08-14 13:49:44.949 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0xf992aa299df8a4d4472cad876102a04baed23efd","contractName":"mycontract","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:49:45.093 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 13:49:45.099 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:50:15.742 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1509 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 13:50:15.749 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 13:50:16.961 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 13:50:16.984 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:50:17.000 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 13:50:17.001 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 13:50:17.009 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 13:50:17.104 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 13:50:17.105 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1296 ms
+2019-08-14 13:50:17.368 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 13:50:17.513 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 13:50:17.532 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 13:50:17.536 [main] INFO  Application() - Started Application in 2.445 seconds (JVM running for 3.762)
+2019-08-14 13:50:17.609 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0xf992aa299df8a4d4472cad876102a04baed23efd","contractName":"mycontract","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 13:50:17.751 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 13:50:17.757 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:02:22.814 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1612 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 14:02:22.821 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 14:02:23.913 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 14:02:23.940 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:02:23.956 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 14:02:23.957 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 14:02:23.965 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 14:02:24.059 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 14:02:24.059 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1187 ms
+2019-08-14 14:02:24.355 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:02:24.524 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:02:24.555 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 14:02:24.559 [main] INFO  Application() - Started Application in 2.388 seconds (JVM running for 4.574)
+2019-08-14 14:02:24.667 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0xf992aa299df8a4d4472cad876102a04baed23efd","contractName":"mycontract","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 14:02:24.871 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://193.112.64.100:5003/WeBASE-Front/trans/handle": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:734) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 4 more
+2019-08-14 14:02:24.876 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:11:05.690 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1692 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 14:11:05.700 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 14:11:06.821 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 14:11:06.850 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:11:06.871 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 14:11:06.872 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 14:11:06.880 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 14:11:06.966 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 14:11:06.966 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1183 ms
+2019-08-14 14:11:07.209 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:11:07.354 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:11:07.374 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 14:11:07.377 [main] INFO  Application() - Started Application in 2.343 seconds (JVM running for 4.135)
+2019-08-14 14:11:07.508 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0xf992aa299df8a4d4472cad876102a04baed23efd","contractName":"mycontract","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 14:11:07.718 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 14:11:07.732 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:20:24.912 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1759 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 14:20:24.926 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 14:20:26.030 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 14:20:26.051 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:20:26.063 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 14:20:26.064 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 14:20:26.072 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 14:20:26.149 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 14:20:26.150 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1163 ms
+2019-08-14 14:20:26.386 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:20:26.529 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:20:26.550 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 14:20:26.554 [main] INFO  Application() - Started Application in 2.247 seconds (JVM running for 4.035)
+2019-08-14 14:20:26.628 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0xf992aa299df8a4d4472cad876102a04baed23efd","contractName":"mycontract","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":false,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 14:20:26.768 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 14:20:26.775 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:20:40.589 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1763 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 14:20:40.604 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 14:20:41.677 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 14:20:41.700 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:20:41.714 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 14:20:41.714 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 14:20:41.722 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 14:20:41.813 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 14:20:41.814 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1144 ms
+2019-08-14 14:20:42.076 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:20:42.225 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:20:42.245 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 14:20:42.248 [main] INFO  Application() - Started Application in 2.265 seconds (JVM running for 3.613)
+2019-08-14 14:20:42.335 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0xf992aa299df8a4d4472cad876102a04baed23efd","contractName":"mycontract","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 14:20:42.500 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 14:20:42.508 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:33:49.670 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 1885 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 14:33:49.677 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 14:33:50.978 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 14:33:51.006 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:33:51.019 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 14:33:51.019 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 14:33:51.027 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 14:33:51.114 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 14:33:51.114 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1371 ms
+2019-08-14 14:33:51.347 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:33:51.496 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:33:51.516 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 14:33:51.520 [main] INFO  Application() - Started Application in 2.425 seconds (JVM running for 4.425)
+2019-08-14 14:33:51.596 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0xf992aa299df8a4d4472cad876102a04baed23efd","contractName":"mycontract","funcName":"set","funcParam":["abc"],"groupId":2,"useAes":true,"user":"0x83e02785ab700f4e4d0f9c4e6b545c73a4b86db1"}
+2019-08-14 14:33:51.738 [main] ERROR TransactionService() - fail sendTransaction
+org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422 null
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:669) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:413) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at com.webank.webase.transaction.TransactionService.sendTransaction(TransactionService.java:51) [classes/:?]
+	at com.webank.webase.Application.main(Application.java:17) [classes/:?]
+2019-08-14 14:33:51.744 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:53:42.279 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 2051 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 14:53:42.289 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 14:53:43.252 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 14:53:43.286 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:53:43.304 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 14:53:43.305 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 14:53:43.310 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 14:53:43.371 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 14:53:43.371 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1040 ms
+2019-08-14 14:53:43.583 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:53:43.708 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 14:53:43.731 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 14:53:43.734 [main] INFO  Application() - Started Application in 2.105 seconds (JVM running for 3.858)
+2019-08-14 14:53:43.814 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0xcb76e20e99bbc4c6fbe6845142752a0dc0ff51cd","contractName":"HelloWorld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x953ce610b28923f8a5e3511adbf0bf383d31b65f"}
+2019-08-14 14:53:44.074 [main] INFO  TransactionService() - transaction result:{"transactionHash":"0x301cddcff70ce2f4558aa55f23901267aee4c021cbfbc8b330f9e1f759369935","transactionIndex":0,"blockHash":"0x0da3081dd1745d53f5a926ef2823f39859a3bf818ad241b439c2a5dc666bb643","blockNumber":24,"gasUsed":32940,"contractAddress":"0x0000000000000000000000000000000000000000","status":"0x0","from":"0x953ce610b28923f8a5e3511adbf0bf383d31b65f","to":"0xcb76e20e99bbc4c6fbe6845142752a0dc0ff51cd","input":"0x4ed3885e000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000036162630000000000000000000000000000000000000000000000000000000000","output":"0x","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","transactionIndexRaw":"0x0","blockNumberRaw":"0x18","statusOK":true,"gasUsedRaw":"0x80ac"}
+2019-08-14 14:53:44.077 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'

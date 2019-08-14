@@ -1,0 +1,9 @@
+transactionUrl: http://114.55.144.141:8082/WeBASE-Front/trans/handle
+groupId: 1
+userAddress: "0x953ce610b28923f8a5e3511adbf0bf383d31b65f"
+useAes: true
+contract:
+  name:  HelloWorld
+  address: "0xcb76e20e99bbc4c6fbe6845142752a0dc0ff51cd"
+  funcName: set
+  funcParam: "[\"abc\"]"
