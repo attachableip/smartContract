@@ -723,3 +723,130 @@ org.springframework.web.client.HttpClientErrorException$UnprocessableEntity: 422
 2019-08-14 14:53:43.814 [main] INFO  TransactionService() - transaction param:{"contractAddress":"0xcb76e20e99bbc4c6fbe6845142752a0dc0ff51cd","contractName":"HelloWorld","funcName":"set","funcParam":["abc"],"groupId":1,"useAes":true,"user":"0x953ce610b28923f8a5e3511adbf0bf383d31b65f"}
 2019-08-14 14:53:44.074 [main] INFO  TransactionService() - transaction result:{"transactionHash":"0x301cddcff70ce2f4558aa55f23901267aee4c021cbfbc8b330f9e1f759369935","transactionIndex":0,"blockHash":"0x0da3081dd1745d53f5a926ef2823f39859a3bf818ad241b439c2a5dc666bb643","blockNumber":24,"gasUsed":32940,"contractAddress":"0x0000000000000000000000000000000000000000","status":"0x0","from":"0x953ce610b28923f8a5e3511adbf0bf383d31b65f","to":"0xcb76e20e99bbc4c6fbe6845142752a0dc0ff51cd","input":"0x4ed3885e000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000036162630000000000000000000000000000000000000000000000000000000000","output":"0x","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","transactionIndexRaw":"0x0","blockNumberRaw":"0x18","statusOK":true,"gasUsedRaw":"0x80ac"}
 2019-08-14 14:53:44.077 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:27:55.542 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 2503 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 15:27:55.549 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 15:27:57.131 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:27:57.159 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 15:27:57.172 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 15:27:57.173 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 15:27:57.181 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 15:27:57.267 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 15:27:57.267 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1639 ms
+2019-08-14 15:27:57.344 [main] WARN  AnnotationConfigServletWebServerApplicationContext() - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionService': Unsatisfied dependency expressed through field 'rest'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-08-14 15:27:57.348 [main] INFO  StandardService() - Stopping service [Tomcat]
+2019-08-14 15:27:57.361 [main] INFO  ConditionEvaluationReportLoggingListener() - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-14 15:27:57.472 [main] ERROR LoggingFailureAnalysisReporter() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field rest in com.webank.webase.transaction.TransactionService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2019-08-14 15:31:36.731 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 2562 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 15:31:36.771 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 15:31:38.493 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:31:38.532 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 15:31:38.554 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 15:31:38.555 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 15:31:38.568 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 15:31:38.642 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 15:31:38.643 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1801 ms
+2019-08-14 15:31:38.701 [main] WARN  AnnotationConfigServletWebServerApplicationContext() - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionService': Unsatisfied dependency expressed through field 'rest'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-08-14 15:31:38.705 [main] INFO  StandardService() - Stopping service [Tomcat]
+2019-08-14 15:31:38.719 [main] INFO  ConditionEvaluationReportLoggingListener() - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-14 15:31:38.813 [main] ERROR LoggingFailureAnalysisReporter() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field rest in com.webank.webase.transaction.TransactionService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2019-08-14 15:32:45.568 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 2580 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 15:32:45.653 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 15:32:47.163 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:32:47.199 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 15:32:47.218 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 15:32:47.219 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 15:32:47.229 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 15:32:47.338 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 15:32:47.339 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1630 ms
+2019-08-14 15:32:47.404 [main] WARN  AnnotationConfigServletWebServerApplicationContext() - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionService': Unsatisfied dependency expressed through field 'rest'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-08-14 15:32:47.407 [main] INFO  StandardService() - Stopping service [Tomcat]
+2019-08-14 15:32:47.423 [main] INFO  ConditionEvaluationReportLoggingListener() - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-14 15:32:47.548 [main] ERROR LoggingFailureAnalysisReporter() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field rest in com.webank.webase.transaction.TransactionService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2019-08-14 15:33:43.776 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 2593 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 15:33:43.790 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 15:33:45.517 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:33:45.551 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 15:33:45.568 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 15:33:45.569 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 15:33:45.578 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 15:33:45.684 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 15:33:45.685 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1832 ms
+2019-08-14 15:33:46.015 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:33:46.191 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 15:33:46.211 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:33:46.215 [main] INFO  Application() - Started Application in 3.19 seconds (JVM running for 4.929)
+2019-08-14 15:34:10.091 [http-nio-8080-exec-1] INFO  [/]() - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 15:34:10.091 [http-nio-8080-exec-1] INFO  DispatcherServlet() - Initializing Servlet 'dispatcherServlet'
+2019-08-14 15:34:10.099 [http-nio-8080-exec-1] INFO  DispatcherServlet() - Completed initialization in 8 ms
+2019-08-14 15:35:30.986 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:35:35.969 [main] INFO  Application() - Starting Application on Chens-MacBook-Pro.local with PID 2629 (/Users/HoloShadow/Downloads/WeBASE-master/quick-start/out/production/classes started by HoloShadow in /Users/HoloShadow/Downloads/WeBASE-master/quick-start)
+2019-08-14 15:35:35.982 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2019-08-14 15:35:37.751 [main] INFO  TomcatWebServer() - Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:35:37.791 [main] INFO  Http11NioProtocol() - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-14 15:35:37.807 [main] INFO  StandardService() - Starting service [Tomcat]
+2019-08-14 15:35:37.808 [main] INFO  StandardEngine() - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-14 15:35:37.816 [main] INFO  AprLifecycleListener() - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/HoloShadow/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-14 15:35:37.921 [main] INFO  [/]() - Initializing Spring embedded WebApplicationContext
+2019-08-14 15:35:37.921 [main] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 1871 ms
+2019-08-14 15:35:38.205 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:35:38.373 [main] INFO  Http11NioProtocol() - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-14 15:35:38.391 [main] INFO  TomcatWebServer() - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:35:38.395 [main] INFO  Application() - Started Application in 2.927 seconds (JVM running for 4.188)
+2019-08-14 15:59:56.471 [Thread-2] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'applicationTaskExecutor'
