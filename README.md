@@ -72,8 +72,9 @@ copyright.txt:  版权局群组内solidity智能合约之一
 
 
 ## copyright.txt
+```   
 说明：让用户在无感知情况下实现验证，实现demo
 - 实现版权局限定ID的方法demo
-
+```   
 # 版权说明
 all copyright © IP共识
