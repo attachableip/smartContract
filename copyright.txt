@@ -1,0 +1,22 @@
+pragma solidity ^0.4.25;
+
+
+contract copyright {
+    address public minter;
+    mapping (address => uint) public ID; //使每一个调用合约的用户都拥有一个对应自己地址的ID
+    mapping (address => string) public link;
+    mapping (address => string) public name;
+    mapping (address => string) public title;
+    function IDset(uint a) {
+        minter = msg.sender;
+        if (ID[msg.sender] != 0) return;  //只允许部署一次ID
+        ID[msg.sender] = a;
+    }
+    function Paperset(uint a,string b,string c,string d) {
+        if (ID[msg.sender] != a) return;  //校验发送者的ID信息，如果ID信息无法核对则无效
+        minter = msg.sender;
+        name[msg.sender] = b;
+        link[msg.sender] = c;
+        title[msg.sender] = d;
+    }
+}
